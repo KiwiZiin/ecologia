@@ -1,0 +1,390 @@
+/*importe através do site google fontes as seguintes fonte*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+hmtl {
+
+    /*Coloque a propriedade scroll-behavior com o valor smooth*/
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    /*Coloque a Familia de fonte 'Reboto' importada do google fonts anteriormente*/
+    /*Mude a cor do texto para o valor #1c1c1c*/
+
+
+    font-family: "Roboto", sans-serif;
+    color: #1c1c1c;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h1,
+h2,
+h3 {
+    /*Coloque a Familia de fonte 'Asap' importada do google fonts anteriormente*/
+    /*Mude a cor do texto para o valor #c5b20b*/
+    /*Alinhe o texto ao centro*/
+    /*Crie um espaçamento top
+DENTRO dos elemento COM VALOR DE 4%*/
+
+    font-family: "Asap", sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-top: 4%;
+
+
+}
+
+
+
+p {
+    /*Adicione um espaçamento(padding) dentro da caixa de 2%*/
+
+
+    padding: 2%;
+    text-indent: 1.8rem;
+    color: #000;
+
+}
+
+
+/*Crie e estilize o elemento header com uma altura(height) de 100vh*/
+header {
+    height: 100vh;
+
+}
+
+/*nav*/
+
+header nav {
+    background-color: transparent;
+
+    /*Coloque a propriedade display com o valor flex*/
+    /*Alinhe os itens no centro*/
+    /*justifique o conteudo com o valor space-between*/
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+    position: fixed;
+
+    /*De uma largura(width) de 100% no elemento */
+
+    width: 100%;
+
+}
+
+nav #logo {
+    /*De uma largura e altura de 4rem no elemento*/
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+nav #logo img {
+    /*De uma largura(width) de 100% no elemento */
+    width: 100%;
+
+}
+
+nav ul {
+    /*De uma largura e altura de 70% no elemento*/
+    width: 70%;
+    height: 50%;
+
+    /*Coloque a propriedade display com valor flex e alinhe os itens ao centro e justifique o conteudo com valor space between*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    /*mude a cor para aliceblue*/
+    /*De umn peso na font(font-weight) com valor de 500*/
+    /*Crie uma sombra no texto(text-shadow) com valor de 1px 1px 4px #000*/
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-shadow: 1px 1px 4px #ffffff;
+
+
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 4px #fff;
+    transition: all .8s;
+
+
+}
+
+.close,
+.hamburguer {
+    /*Mude a cor para Branco em hexadecimal*/
+    /*Aumente o tamanhio da fonte para 1.5rem*/
+
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+
+
+
+}
+
+/*TELAS MENORES menu*/
+
+@media(max-width:768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+
+    .show {
+        left: 0;
+        transition: left .6s;
+    }
+
+    ul {
+        background: #19197079;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh !important;
+        transition: left .6s;
+        flex-direction: column;
+        justify-content: space-around !important;
+
+    }
+}
+
+/*Banner*/
+
+header .banner {
+    height: 100%;
+    background: url('https://img.freepik.com/fotos-premium/lixo-de-poluicao-ambiental-do-oceano-jogado-no-mar-ecologia-do-oceano_184982-488.jpg') 
+    center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    flex-direction: column;
+    padding: 1.25rem;
+    row-gap: 4rem;
+}
+
+.banner h1,
+h2 {
+    text-shadow: 2px 2px #5c94e1;
+
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+
+.botao {
+
+    background: #4067da;
+    color: #ffffff;
+    padding: .8rem 1.8rem;
+    font-size: .8rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+
+}
+
+/*SOBRE*/
+
+#sobre {
+    background: 
+        url('https://jornalismoufsc.shorthandstories.com/lixo-abrigo-para-polvos/assets/GUgy1M1ERV/fallback-1920x1080.jpg')no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.botao_destaque {
+    background: #3356e4;
+    box-shadow: 2px 2px #fcfcfc;
+
+}
+
+#sobre p {
+    background: #191970;
+    color: #f7f7f7;
+    padding: .8rem 1.8rem;
+    font-size: .8rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+
+
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/*SERVIÇOS*/
+#servicos {
+    background: linear-gradient(120deg, #0000008b, #000),
+        url('https://assets-blog.pagseguro.uol.com.br/wp-content/2022/01/Entenda-o-que-e-um-Contrato-de-Prestacao-de-Servicos.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+
+}
+
+#conteudos_servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+
+
+}
+
+#conteudos_servicos div {
+    width: 45%;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+
+
+
+}
+
+#conteudos_servicos img {
+    width: 60px;
+
+}
+
+@media(max-width:500px) {
+    #conteudos_servicos div {
+        width: 100%;
+    }
+
+}
+
+/*Fotos*/
+#fotos {
+    background: linear-gradient(120deg, #0000008b, #000),
+        url('htttps://static-cse.canva.com/blob/1173244/screen3.jpg');
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fotos div {
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#fotos img {
+    width: 350px;
+    height: 200px;
+    margin: 1rem;
+    border: double 8px rgb(117, 117, 117);
+}
+
+@media(max-width:500px) {
+    #fotos img {
+        width: 100%;
+    }
+}
+
+footer {
+    /*Alinhe o texto ao centro*/
+    text-align: center;
+}
+
+footer p {
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    /*Coloque a familia de fonte'Nunito' importada do google fonts*/
+    font-family: "Nunito", sans-serif;
+
+}
+
+.contatos_card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /*De um espaçamento externo de 2rem*/
+
+    margin: 2rem;
+
+}
+
+.contatos_card img {
+    /*Mude o tamanho da imagem(largura) para 3rem*/
+    width: 3rem;
+
+}
+
+.contatos_card a {
+    /*Mude a cor para hexadecimal 191970*/
+    color: #191970;
+
+}
+
+@media (max-width:500px) {
+
+
+    footer section {
+        flex-direction: column;
+
+    }
+
+
+}
+
+.contatos_card {
+    margin-top: 1rem;
+}
